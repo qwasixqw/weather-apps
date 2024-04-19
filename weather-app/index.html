@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="shortcut icon" href="img/fav-icon-weather.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="search-box">
+			<i class="fa-solid fa-location-dot search-box__icon"></i>
+			<input type="text" placeholder="Enter your location" class='search-box__input' />
+			<button class="fa-solid fa-magnifying-glass search-box__button"></button>
+		</div>
+		<div class="error">
+			<p>Invalid city name</p>
+		</div>
+		<div class="weather">
+			<div class="weather-image">
+				<i class="fa-solid fa-cloud"></i>
+			</div>
+			<h1 class="temp"><span>22</span> &#8451</h1>
+			<h2 class="city">New York</h2>
+			<div class="details">
+				<div class="details__column">
+					<i class="fa-solid fa-water details__icon"></i>
+					<div class='details__info'>
+						<p class="details__humidity"><span>50</span>%</p>
+						<p class='details__text'> Humidity</p>
+					</div>
+				</div>
+				<div class="details__column">
+					<i class="fa-solid fa-wind details__icon"></i>
+					<div class='details__info'>
+						<p class="details__wind"><span>15</span> km/h</p>
+						<p class='details__text'>Wind Speed</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
